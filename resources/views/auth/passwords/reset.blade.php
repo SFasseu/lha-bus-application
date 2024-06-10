@@ -1,6 +1,6 @@
-@extends('layouts.app')
-
+@extends('layouts.app', ['title' => "galaxy_Travel_app(GTA)", 'active' => 'dashboard'])
 @section('content')
+<br><br><br><br><br><br>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
