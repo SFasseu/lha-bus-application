@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\client;
+use App\Models\Client;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -34,7 +34,7 @@ class ClientController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(client $client)
+    public function show(Client $client)
     {
         //
     }
@@ -42,7 +42,7 @@ class ClientController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(client $client)
+    public function edit(Client $client)
     {
         //
     }
@@ -50,7 +50,7 @@ class ClientController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, client $client)
+    public function update(Request $request, Client $client)
     {
         //
     }
@@ -58,7 +58,7 @@ class ClientController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(client $client)
+    public function destroy(Client $client)
     {
         //
     }

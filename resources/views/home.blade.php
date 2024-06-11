@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg  bg-info  navbar-absolute">
+    <nav class="navbar navbar-expand-lg   navbar-absolute">
         <div class="container-fluid">
             <div class="navbar-wrapper">
                 <div class="navbar-toggle">
@@ -65,13 +65,10 @@
         </div>
     </nav>
     <!-- End Navbar -->
-    <div class="panel-header panel-header-sm mx-1 h-auto">
+    <div class="panel-header panel-header-sm">
 
-        <div class="banière" filter-color="black" style="background-image: url('{{asset('/admin') }}/assets/img/bus.jpg'); background-repeat: no-repeat; background-size: cover;">
-      <br><br><br><br><br><br><marquee class="blink"  direction="left" style="font-size: 30px">BIENVENU SUR <b style="color: blue">G.T.A</b> VOTRE APPLICATION DE RESERVATION DE NOS VOYAGES PROGRAMMES!<br><br><br<br><br><br></marquee>
-        </div>
+
     </div>
-
         <div class="content">
             <div class="row">
                 <div class="col-md-12">

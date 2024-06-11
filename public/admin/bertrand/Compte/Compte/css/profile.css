@@ -1,0 +1,9 @@
+.profile{
+        max-width:500px;
+         height:470px;
+         border-radius:10px;
+         box-shadow:5px 5px 15px rgba(12,7,15,0.5);
+         font-size:25px;
+         font-family:Tahoma;
+
+}

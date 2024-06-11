@@ -1,0 +1,140 @@
+ *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        font-family:arial;
+        }
+
+        header{
+        width:100%;
+        height:100px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:fixed;
+        z-index:99;
+        box-shadow:0 0 10px #000;
+        background:skyblue;
+        }
+
+        #chk1{
+        display:none;
+        }
+
+        .icon{
+        width:19px;
+        color:white;
+        cursor:pointer;
+        }
+
+        header .logo{
+        flex:1;
+        color:white;
+        margin-left:50px;
+        text-transform:uppercase;
+        }
+
+        header .search-box{
+        flex:1;
+        position:relative;
+        }
+
+        .search-box input{
+        width:100%;
+        height:40px;
+        border:none;
+        outline:none;
+        background:#f2f2f2;
+        border-radius:30px;
+        color:gray;
+        font-size;16px;
+        text-align:center;
+        padding-left:5px;
+        padding-right:40px;
+        }
+
+        .search-box button{
+        cursor:pointer;
+        width:40px;
+        height:40px;
+        border-radius:30px;
+        border:none;
+        position:absolute;
+        top:0;
+        right:0;
+        transform:scale(0.9);
+        background:red;
+        }
+
+        header ul{
+        flex:2;
+        display:flex;
+        justify-content:space-evenly;
+        }
+
+         header ul li{
+        list-style:none;
+        }
+
+         header ul li a{
+        text-decoration:none;
+        color:white;
+        font-weight:600;
+        padding:10px 15px;
+        }
+
+        header ul li a:hover{
+        border-bottom:2px solid white;
+        }
+
+ .container{
+                  margin-left:50px;
+                  display:grid;
+                  min-height:150vh;
+                  grid-template-columns:1fr 1fr 1fr;
+                  grid-template-rows:auto;
+                  column-gap:1px;
+                  row-gap:1px;
+   }
+
+ .grid{
+    width:390px;
+    }
+
+ .texts{
+ box-shadow:0 0 25px black;
+ border-radius:17px 15px 5px;
+
+ }
+
+ h2{
+ font-size:30px;
+ }
+
+ .yo{
+    width:390px;
+	height:390px;
+	box-shadow:0 0 25px #000;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+   }
+
+       .btn{
+     width:300px;
+       height:50px;
+       background:black;
+       border:2px solid skyblue;
+       outline:none;
+       border-radius:35px;
+       cursor:pointer;
+       font-size:1.1em;
+       color:white;
+       font-weight:500;
+       margin-left:40px;
+       transition:.5s;
+       }
+
+.btn:hover{
+    background:orange;
+    color:black;
+    }

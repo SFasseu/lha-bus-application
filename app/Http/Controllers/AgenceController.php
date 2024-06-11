@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\agence;
+use App\Models\Agence;
 use Illuminate\Http\Request;
 
 class AgenceController extends Controller
@@ -12,10 +12,10 @@ class AgenceController extends Controller
      */
     public function index()
     {
-        //récpération de tous les utilisateurs
-        $agences = Agence::all();
+         //récpération de tous les utilisateurs
+         $agences = Agence::all();
 
-        return view('user.agnece', ['agences' => $agences]);
+         return view('agence.index', ['agences' => $agences]);
     }
 
     /**
@@ -37,7 +37,7 @@ class AgenceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(agence $agence)
+    public function show(Agence $agence)
     {
         //
     }
@@ -45,7 +45,7 @@ class AgenceController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(agence $agence)
+    public function edit(Agence $agence)
     {
         //
     }
@@ -53,7 +53,7 @@ class AgenceController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, agence $agence)
+    public function update(Request $request, Agence $agence)
     {
         //
     }
@@ -61,7 +61,7 @@ class AgenceController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(agence $agence)
+    public function destroy(Agence $agence)
     {
         //
     }

@@ -9,7 +9,7 @@
    <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <link rel="apple-touch-icon" sizes="76x76" href="{{asset('/admin')}}/assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="{{asset('/admin')}}/assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="{{asset('/admin')}}/assets/img/gta.png">
   <title>{{$title}}</title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -67,12 +67,6 @@
             <a href="./user">
               <i class="now-ui-icons users_single-02"></i>
               <p>Users</p>
-            </a>
-          </li>
-          <li class="nav-item {{$active == 'role' ? 'active' : ''}}">
-            <a href="./role">
-              <i class="now-ui-icons business_badge"></i>
-              <p>Role</p>
             </a>
           </li>
           <h6 class="title text-center">CLIENT</h6>

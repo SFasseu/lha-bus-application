@@ -1,0 +1,53 @@
+div{
+  padding:50px;
+
+  }
+
+  .logos{
+        box-shadow:0 0 10px #000;
+        width:500px;
+        height:500px;
+        border-radius:50%;
+        }
+
+
+        .btn{
+     width:100px;
+       height:60px;
+       background:green;
+       border:2px solid skyblue;
+       outline:none;
+       border-radius:15px;
+       cursor:pointer;
+       font-size:2.3em;
+       color:white;
+       font-weight:500;
+       margin-left:40px;
+       transition:.5s;
+       }
+
+.btn:hover{
+    background:green;
+    color:black;
+    }
+
+
+        .btns{
+     width:100px;
+       height:70px;
+       background:red;
+       border:2px solid skyblue;
+       outline:none;
+       border-radius:15px;
+       cursor:pointer;
+       font-size:2.7em;
+       color:white;
+       font-weight:500;
+       margin-left:40px;
+       transition:.5s;
+       }
+
+.btns:hover{
+    background:red;
+    color:black;
+    }

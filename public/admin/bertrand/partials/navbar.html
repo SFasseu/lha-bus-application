@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'Reservation/css/acceuil.css' %}">
+</head>
+<body>
+ {% if request.user.is_authenticated %}
+    <div class="navigation">
+      <div class="userBx">
+        <div class="imgBx">
+          <img src="{{ user.profile.image.url }}" alt="" />
+        </div>
+        <p class="logoname">{{ user.username }}</p>
+      </div>
+      <div class="menuToggle"></div>
+      <div class="menu">
+        <ul>
+            <li><a href="{% url 'Compte:profile' %}">Mon Profile</a></li>
+            <li><a href="#">Modifier Profile</a></li>
+            <li><a href="#">Changer mon de passe</a></li>
+            <li><a href="{% url 'Compte:login_user' %}">Decconexion</a></li>
+            <li><a href="#">Contactez nous</a></li>
+            <li><a href="{% url 'Reservation:acceuil' %}">Home</a></li>
+        </ul>
+      </div>
+    </div>
+   {% endif %}
+
+</body>
+</html>

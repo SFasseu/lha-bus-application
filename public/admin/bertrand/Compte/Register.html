@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="Compte/css/register.css">
+</head>
+<body style = "background-image:url('compte/images/bus2.jpg' );">
+<header>
+    <h2 class="logo">Welcome TO <b>TRAVEL AGENCY</b></h2>
+    <nav class="navigation">
+        <a href="acceuil.html">Home</a>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Contact</a>
+       <a href="login.html"><button class="btn">Login</button></a>
+    </nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+
+<div class="wrapper">
+ <span class="icon-close"><img src="Compte/images/icon_close.png"></span>
+    <div class="form-box login">
+        <h2>Register</h2>
+
+        <form method="POST" onsubmit="return validate()">
+            
+            <div class="input-box">
+                <span class="icon"><img src="compte/images/profile.png"></span>
+                <input type="text" name="first_name" required>
+                <label>First name</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><img src="Compte/images/profile.png"></span>
+                <input type="text" name="username" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><img src="Compte/images/mail.png"></span>
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><img src="Compte/images/icon_lock.png"></span>
+                <input type="password" name="password" required>
+                <label>password</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><img src="Compte/images/icon_lock.png" id="icon_lock"></span>
+                <input type="password" name="confirm_password" id="password" required>
+                <label>Confirm password</label>
+            </div>
+            <div class="remember-forgot">
+
+                <label><input type="checkbox">I agree with all terms & policies</label>
+
+
+            </div>
+<input type="submit" class="ok" value="Register">
+            <div class="login-register">
+                <p>Already have an account?<a href="#" class="register-link">login</a> </p>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script>
+
+    let icon_lock = document.getElementById("icon_lock");
+    let password = document.getElementById("password");
+
+    icon_lock.onclick = function(){
+      if(password.type == "password"){
+        password.type == "text";
+      }else{
+        password.type == "password";
+      }
+    }
+
+</script>
+
+
+
+</body>
+</html>

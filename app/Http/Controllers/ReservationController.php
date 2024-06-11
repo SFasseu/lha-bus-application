@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\reservation;
+use App\Models\Reservation;
 use Illuminate\Http\Request;
 
 class ReservationController extends Controller
@@ -34,7 +34,7 @@ class ReservationController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(reservation $reservation)
+    public function show(Reservation $reservation)
     {
         //
     }
@@ -42,7 +42,7 @@ class ReservationController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(reservation $reservation)
+    public function edit(Reservation $reservation)
     {
         //
     }
@@ -50,7 +50,7 @@ class ReservationController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, reservation $reservation)
+    public function update(Request $request, Reservation $reservation)
     {
         //
     }
@@ -58,7 +58,7 @@ class ReservationController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(reservation $reservation)
+    public function destroy(Reservation $reservation)
     {
         //
     }

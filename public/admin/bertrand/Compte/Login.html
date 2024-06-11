@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="Compte/css/login.css">
+</head>
+<body style = "background-image:url('compte/images/bus4.jpg');">
+<header>
+    <h2 class="logo">Welcome <b>TRAVEL AGENCY</b></h2>
+    <nav class="navigation">
+        <a href="acceuil.html">Home</a>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Contact</a>
+        <a href="Register.html"><button class="btn"><b>Register</b></button></a>
+    </nav>
+</header>
+
+<div class="wrapper">
+    <span class="icon-close"><img src="Compte/images/icon_close.png"></span>
+    <div class="form-box login">
+        <h2>Login</h2>
+
+        <form method="POST">
+            
+            <div class="input-box">
+                <span class="icon"><img src="Compte/images/profile.png"></span>
+                <input type="text" name="username" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><img src="Compte/images/icon_lock.png" id="iconlock"></span>
+                <input type="password" name="password" id="password" required>
+                <label>password</label>
+            </div>
+            <div class="remember-forgot">
+
+                <label><input type="checkbox">Remember me </label>
+                <a href="#">Forgot Password?</a>
+
+            </div>
+<a href="agence.html"><button type="submit" class="ok">Login</button></a>
+            <div class="login-register">
+                <p>Don't have any account?<a href="#" class="register-link">register</a> </p>
+            </div>
+
+           
+        </form>
+
+    </div>
+
+    <script>
+
+    let iconlock = document.getElementById("iconlock");
+    let password = document.getElementById("password");
+
+    iconlock.onclick = function(){
+      if(password.type == "password"){
+        password.type == "text";
+      }else{
+        password.type == "password";
+      }
+    }
+
+</script>
+</div>
+</body>
+</html>

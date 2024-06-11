@@ -2,7 +2,7 @@
 
 @section('content')
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg  bg-info  navbar-absolute">
+  <nav class="navbar navbar-expand-lg  navbar-absolute">
     <div class="container-fluid">
         <div class="navbar-wrapper">
             <div class="navbar-toggle">
@@ -76,7 +76,7 @@
     </div>
 </nav>
 <!-- End Navbar -->
-    <div class="panel-header panel-header-sm mx-2">
+    <div class="panel-header panel-header-sm">
     </div>
     <div class="content">
         <div class="row">
